@@ -35,3 +35,4 @@ module Day2_P1 =
         let sub = {Horizontal = 0; Depth = 0}
         inputLines |> List.fold (fun acc x -> processCommand acc x) sub
         |> fun x -> x.Depth * x.Horizontal
+        

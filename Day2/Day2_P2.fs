@@ -41,5 +41,4 @@ module Day2_P2 =
         inputLines 
         |> List.fold (fun acc x -> processCommand acc x) sub
         |> fun x -> x.Depth * x.Horizontal
-
-    // printfn $"Part 1: {p2}"
+        
