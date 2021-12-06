@@ -20,6 +20,7 @@ module Day4_P2 =
             match x with
             | NotWonBoard b
             | WinningBoard b -> b
+
     type Draws = int list
     type SquidGame = { Draws: Draws; Boards: Board list }
 
@@ -76,12 +77,6 @@ module Day4_P2 =
         |> List.map (fun x -> checkBoardRows x)
         |> List.map (fun x -> checkBoardColumns x)
         |> fun boards -> {Draws = squid.Draws; Boards = boards}
-        // squid.Boards
-        // |> List.map (fun board -> match board with | NotWonBoard b -> checkBoardColumns board | _ -> board)
-        // |> fun boards -> {Draws = squid.Draws; Boards = squid.Boards}
-
-    // let winningBoards squid = 
-    //     squid.Boards |> List.map (fun board -> board |> checkBoard) |> List.filter (fun board -> board.IsSome)
 
     let sumRow row =
         row |> List.fold (fun acc x -> acc + match x with | Empty y -> y | _ -> 0) 0

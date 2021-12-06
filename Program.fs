@@ -13,3 +13,6 @@ printfn $"Day 3 - Part 2: {Day3_P2.p2}\n"
 
 printfn $"Day 4 - Part 1: {Day4_P1.p1}"
 printfn $"Day 4 - Part 2: {Day4_P2.p2}\n"
+
+printfn $"Day 4 - Part 1: {Day5_P1.p1}"
+printfn $"Day 4 - Part 2: {Day5_P2.p2}\n"
