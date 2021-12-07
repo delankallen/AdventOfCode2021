@@ -13,23 +13,13 @@ module Day7_P1 =
         |> Seq.map int
         |> Seq.toList
 
-    let testValues = [16;1;2;0;4;2;7;1;2;14]
-
-    let sumPos x =
-        [0..x] |> List.sum
-
-    let countedValues = inputLines inputFile |> List.countBy id
-    let common = countedValues |> List.map (fun (_,b) -> b) |> List.max
-
-    let mostCommonPosition = countedValues |> List.filter (fun (a,b) -> b = common) |> fun x -> fst x[0]
-
     let getFuel origin des =
-        origin - des |> abs |> sumPos
+        origin - des |> abs
 
-    let wat lines =
+    let lineUpTheCrabs lines =
         [0..(lines |> List.max)] 
         |> List.map (fun pos -> lines |> List.map (fun origin -> getFuel origin pos) |> List.sum) 
         |> List.min
 
     let p1 = 
-        inputLines inputFile |> wat
+        inputLines inputFile |> lineUpTheCrabs

@@ -8,5 +8,21 @@ module Day7_P2 =
 
     let inputLines fileName =
         File.ReadAllLines fileName
+        |> Seq.map (fun x -> x.Split(','))
+        |> Seq.last
+        |> Seq.map int
+        |> Seq.toList
 
-    let p2 = "frank"
+    let sumPos x =
+        [0..x] |> List.sum
+
+    let getFuel origin des =
+        origin - des |> abs |> sumPos
+
+    let lineUpTheCrabs lines =
+        [0..(lines |> List.max)] 
+        |> List.map (fun pos -> lines |> List.map (fun origin -> getFuel origin pos) |> List.sum) 
+        |> List.min
+
+    let p2 = 
+        inputLines inputFile |> lineUpTheCrabs
