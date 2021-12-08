@@ -19,6 +19,8 @@
     <Compile Include="./Day6/Day6_P2.fs" />
     <Compile Include="./Day7/Day7_P1.fs" />
     <Compile Include="./Day7/Day7_P2.fs" />
+    <Compile Include="./Day8/Day8_P1.fs" />
+    <Compile Include="./Day8/Day8_P2.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

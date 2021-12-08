@@ -20,5 +20,8 @@ printfn $"Day 5 - Part 2: {Day5_P2.p2}\n"
 printfn $"Day 6 - Part 1: {Day6_P1.p1}"
 printfn $"Day 6 - Part 2: {Day6_P2.p2}\n"
 
-printfn $"Day 7 - Part 1: {Day7_P1.p1}"
-printfn $"Day 7 - Part 2: {Day7_P2.p2}\n"
+printfn $"Day 7 - Part 1: {Day7_P1.p1}\n"
+// printfn $"Day 7 - Part 2: {Day7_P2.p2}\n"
+
+printfn $"Day 8 - Part 1: {Day8_P1.p1}"
+printfn $"Day 8 - Part 2: {Day8_P2.p2}\n"
